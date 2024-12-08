@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/ar.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!-- Camera -->
+      <a-entity camera></a-entity>
+
+      <!-- Marcador -->
+      <a-marker preset="hiro">
+        
+        <!-- Camada 1: Exemplo com imagem 2D -->
+        <a-entity id="layer1" visible="true">
+          <a-image 
+            src="imagens/frase1.svg"
+            position="0 1 0" 
+            width="1" 
+            height="1.5">
+          </a-image>
+          <a-text value="Imagem 1" position="0 1.8 0" align="center"></a-text>
+        </a-entity>
+
+    </body>
+    </html>
